@@ -162,7 +162,7 @@
         };
 
     // NB: This call will fail if the server does not include CORS headers in the response
-    $.ajax({
+/*    $.ajax({
       url : newUrl,
       type: 'POST',
       headers: { 'Authorization': 'Basic ' + btoa( model.clientid + ':' + model.clientsecret ) },
@@ -182,7 +182,7 @@
                 JSON.stringify(jqXHR.responseJSON || 'error', null, 2) +
                 '</pre>');
       }
-    });
+    });*/
 
     if (event)
       event.preventDefault();
