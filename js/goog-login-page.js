@@ -6,8 +6,8 @@
 
 (function (){
 
-  const googleTokenUrl = 'https://www.googleapis.com/oauth2/v4/token',
-        extraneousDoubleSlashFinder = new RegExp('^(https?://[^/]+)//(.+)$');
+//  const googleTokenUrl = 'https://www.googleapis.com/oauth2/v4/token',
+//        extraneousDoubleSlashFinder = new RegExp('^(https?://[^/]+)//(.+)$');
 
   var html5AppId = html5AppId || "B673CC48-1927-46CB-827A-E6E9D7D5103D",
       linkTemplate = linkTemplate || "${baseloginurl}?client_id=${clientid}&redirect_uri=${cburi}&response_type=${rtype}&state=${state}&scope=${scope}&nonce=${nonce}";
@@ -193,7 +193,7 @@ const randomValue = (len) => {
         };
 
     // NB: This call will fail if the server does not include CORS headers in the response
-    $.ajax({
+/*    $.ajax({
       url : googleTokenUrl,
       type: 'POST',
       data : payload,
@@ -212,7 +212,7 @@ const randomValue = (len) => {
                 '</pre>');
 
       }
-    });
+    });*/
 
     if (event)
       event.preventDefault();
